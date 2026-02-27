@@ -1507,7 +1507,7 @@ export function EducationDashboard() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="select-class">Choose a class...</SelectItem>
-                      {classes.map(cls => (
+                      {classes.filter(cls => cls.id).map(cls => (
                         <SelectItem key={cls.id} value={cls.id}>
                           {cls.name} {cls.grade ? `(${cls.grade})` : ''}
                         </SelectItem>
@@ -1531,7 +1531,7 @@ export function EducationDashboard() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="all">All Sessions</SelectItem>
-                      {sessions.map(sess => (
+                      {sessions.filter(sess => sess.id).map(sess => (
                         <SelectItem key={sess.id} value={sess.id}>
                           {sess.name}
                         </SelectItem>
@@ -1840,7 +1840,7 @@ export function EducationDashboard() {
                         <SelectValue placeholder="Choose a student" />
                       </SelectTrigger>
                       <SelectContent>
-                        {students.map(s => (
+                        {students.filter(s => s.id).map(s => (
                           <SelectItem key={s.id} value={s.id}>
                             {s.firstName} {s.lastName} ({s.studentId})
                           </SelectItem>
@@ -2264,7 +2264,7 @@ export function EducationDashboard() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="no-class">No class assigned</SelectItem>
-                    {classes.map(cls => (
+                    {classes.filter(cls => cls.id).map(cls => (
                       <SelectItem key={cls.id} value={cls.id}>{cls.name}</SelectItem>
                     ))}
                   </SelectContent>
@@ -2422,7 +2422,7 @@ export function EducationDashboard() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="no-session">Not assigned</SelectItem>
-                      {sessions.map(sess => (
+                      {sessions.filter(sess => sess.id).map(sess => (
                         <SelectItem key={sess.id} value={sess.id}>{sess.name}</SelectItem>
                       ))}
                     </SelectContent>
@@ -2639,7 +2639,7 @@ export function EducationDashboard() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="no-teacher">Not assigned</SelectItem>
-                    {teachers.filter(t => t.status === "active").map(teacher => (
+                    {teachers.filter(t => t.status === "active" && t.id).map(teacher => (
                       <SelectItem key={teacher.id} value={teacher.id}>
                         {teacher.firstName} {teacher.lastName}
                       </SelectItem>
@@ -2655,7 +2655,7 @@ export function EducationDashboard() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="no-session">Not assigned</SelectItem>
-                    {sessions.map(sess => (
+                    {sessions.filter(sess => sess.id).map(sess => (
                       <SelectItem key={sess.id} value={sess.id}>{sess.name}</SelectItem>
                     ))}
                   </SelectContent>
