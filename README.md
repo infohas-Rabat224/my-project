@@ -1,3 +1,16 @@
+## ✈️ Become a Hôtesse de l’Air au Maroc
+
+Interested in a career as a **hôtesse de l'air maroc**?
+
+👉 Discover the full guide here: https://www.infohas.ma
+
+The platform covers:
+- Complete cabin crew training programs in Morocco
+- شروط العمل كمضيفة طيران
+- Airline recruitment preparation
+- Aviation career roadmap
+
+This resource is designed to help future flight attendants succeed in the competitive aviation industry.
 # 🚀 Welcome to Z.ai Code Scaffold
 
 A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
